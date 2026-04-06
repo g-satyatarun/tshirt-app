@@ -8,67 +8,67 @@
             "image" : "app/assets/images/us_polo_webp.jpeg"
         },
         {
-        "company": "Nike",
-        "type": "Sports",
-        "rating": "4",
-        "price": "₹799",
-        "image": "app/assets/images/nike_webp.jpeg"
-    },
-    {
-        "company": "Adidas",
-        "type": "Casual",
-        "rating": "4.5",
-        "price": "₹699",
-        "image": "app/assets/images/adidas_webp.jpeg"
-    },
-    {
-        "company": "Puma",
-        "type": "Graphic",
-        "rating": "4",
-        "price": "₹599",
-        "image": "app/assets/images/puma_webp.jpg"
-    },
-    {
-        "company": "Levi's",
-        "type": "Plain",
-        "rating": "5",
-        "price": "₹899",
-        "image": "app/assets/images/levis_webp.jpeg"
-    },
-    {
-        "company": "Zara",
-        "type": "Oversized",
-        "rating": "4.2",
-        "price": "₹999",
-        "image": "app/assets/images/zara_webp.jpeg"
-    },
-    {
-        "company": "H&M",
-        "type": "Round Neck",
-        "rating": "4",
-        "price": "₹399",
-        "image": "app/assets/images/hm_webp.jpeg"
-    },
-    {
-        "company": "Roadster",
-        "type": "Striped",
-        "rating": "4.3",
-        "price": "₹449",
-        "image": "app/assets/images/roadstar_webp.jpeg"
-    },
-    {
-        "company": "Allen Solly",
-        "type": "Formal",
-        "rating": "4.6",
-        "price": "₹749",
-        "image": "app/assets/images/allensolly_webp.jpeg"
-    },
-    {
-        "company": "Peter England",
-        "type": "Henley",
-        "rating": "4.1",
-        "price": "₹549",
-        "image": "app/assets/images/peterengland_webp.jpeg"
-    }
+            "company": "Nike",
+            "type": "Sports",
+            "rating": "4",
+            "price": "₹799",
+            "image": "app/assets/images/nike_webp.jpeg"
+        },
+        {
+            "company": "Adidas",
+            "type": "Casual",
+            "rating": "4.5",
+            "price": "₹699",
+            "image": "app/assets/images/adidas_webp.jpeg"
+        },
+        {
+            "company": "Puma",
+            "type": "Graphic",
+            "rating": "4",
+            "price": "₹599",
+            "image": "app/assets/images/puma_webp.jpg"
+        },
+        {
+            "company": "Levi's",
+            "type": "Plain",
+            "rating": "5",
+            "price": "₹899",
+            "image": "app/assets/images/levis_webp.jpeg"
+        },
+        {
+            "company": "Zara",
+            "type": "Oversized",
+            "rating": "4.2",
+            "price": "₹999",
+            "image": "app/assets/images/zara_webp.jpeg"
+        },
+        {
+            "company": "H&M",
+            "type": "Round Neck",
+            "rating": "4",
+            "price": "₹399",
+            "image": "app/assets/images/hm_webp.jpeg"
+        },
+        {
+            "company": "Roadster",
+            "type": "Striped",
+            "rating": "4.3",
+            "price": "₹449",
+            "image": "app/assets/images/roadstar_webp.jpeg"
+        },
+        {
+            "company": "Allen Solly",
+             "type": "Formal",
+            "rating": "4.6",
+            "price": "₹749",
+            "image": "app/assets/images/allensolly_webp.jpeg"
+        },
+        {
+            "company": "Peter England",
+            "type": "Henley",
+            "rating": "4.1",
+            "price": "₹549",
+            "image": "app/assets/images/peterengland_webp.jpeg"
+        }
     ]
 }
