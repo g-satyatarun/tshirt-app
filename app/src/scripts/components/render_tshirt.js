@@ -1,36 +1,57 @@
 import { html, render } from 'https://cdn.jsdelivr.net/npm/lit-html@3.3.2/+esm';
 
+
+let allTshirts = [];
+
+// 🔹 Load data
 async function loadTshirt() {
     const response = await fetch("app/assets/tshirt.json");
-
-    console.log(response);
-
     const data = await response.json();
-    console.log(data);
-
-    return data.tshirts; 
+    return data.tshirts;
 }
 
-
-const tshirts = await loadTshirt();
-
-
-function render_tshirt(tshirts) {
+// 🔹 Render single
+function render_tshirt(t) {
     return html`
         <tshirt-card 
-            company="${tshirts.company}" 
-            type="${tshirts.type}"
-            rating="${tshirts.rating}" 
-            price="${tshirts.price}"
-            image="${tshirts.image}">
+            .company=${t.company}
+            .type=${t.type}
+            .rating=${t.rating}
+            .price=${t.price}
+            .image=${t.image}>
         </tshirt-card>
     `;
 }
 
-
+// 🔹 Render list
 function render_all_tshirts(tshirts) {
-    return html`${tshirts.map(item => render_tshirt(item))}`;
+    if (tshirts.length === 0) {
+        return html`<p>No product found ❌</p>`;
+    }
+    return html`${tshirts.map(t => render_tshirt(t))}`;
 }
 
+// 🔹 Search function
+function searchTshirts() {
+    const value = document.getElementById("searchBox").value.toLowerCase();
 
-render(render_all_tshirts(tshirts), document.getElementById('tshirt'));
+    const filtered = allTshirts.filter(t =>
+        t.company.toLowerCase().includes(value)
+    );
+
+    render(render_all_tshirts(filtered), document.getElementById('tshirt'));
+}
+
+// 🔹 Load + initial render
+allTshirts = await loadTshirt();
+render(render_all_tshirts(allTshirts), document.getElementById('tshirt'));
+
+// 🔹 Button click
+document.getElementById("searchBtn").addEventListener("click", searchTshirts);
+
+// 🔹 Enter key support
+document.getElementById("searchBox").addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        searchTshirts();
+    }
+});
